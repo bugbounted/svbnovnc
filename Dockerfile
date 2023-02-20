@@ -1,12 +1,12 @@
  FROM ubuntu:latest
 
 # Install dependencies
-RUN apt-get update && apt-get install -y \
-    wget \
-    unrar \
-    wine \
-    noVNC \
-    xvfb 
+RUN apt-get update && apt-get install -y
+RUN apt-get wget
+RUN apt-get unrar
+RUN apt-get wine
+RUN apt-get noVNC
+RUN apt-get xvfb 
     
 # Download SilverBullet v1.1.2 software 
 RUN wget https://github.com/mohamm4dx/SilverBullet/releases/download/1.1.2/SilverBullet.v1.1.2.rar 
